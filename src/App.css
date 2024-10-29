@@ -1,0 +1,242 @@
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #0056b3; /* Darker blue for a more professional look */
+  padding: 20px 40px; /* Increased padding for a larger nav area */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  transition: background-color 0.3s ease; /* Animation for hover */
+}
+
+nav:hover {
+  background-color: #004494; /* Even darker on hover */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Reset margin */
+  display: flex;
+  justify-content: space-around; /* Space items evenly */
+}
+
+nav ul li {
+  margin-right: 30px; /* Increased space between nav items */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin from last item */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 20px; /* Increased padding for better touch targets */
+  font-size: 1.2em; /* Larger font size for better readability */
+  transition: color 0.3s ease; /* Animation for link color */
+}
+
+nav ul li a:hover {
+  color: #e0e0e0; /* Lighten link color on hover */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  background: white;
+  padding: 30px; /* Increased padding for a more spacious form */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+  transition: transform 0.3s ease; /* Animation for form hover */
+}
+
+form:hover {
+  transform: scale(1.02); /* Slightly increase size on hover */
+}
+
+form input {
+  margin-bottom: 20px; /* Increased space between inputs */
+  padding: 12px; /* Increased padding for inputs */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s ease; /* Animation for input focus */
+}
+
+form input:focus {
+  border-color: #0056b3; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Subtle glow effect on focus */
+}
+
+form button {
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; /* Larger font size for buttons */
+  transition: background-color 0.3s ease; /* Animation for button hover */
+}
+
+form button:hover {
+  background-color: #218838; /* Darker shade on hover */
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+th, td {
+  padding: 20px; /* Increased padding for table cells */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: bold; /* Bold text for table headers */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Light background on row hover */
+}
+
+/* Search and Filter Styles */
+.search-filter {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-filter input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.search-filter select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Pagination Styles */
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #0056b3; /* Match the nav color */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Animation for pagination hover */
+  font-size: 1em; /* Larger font size for better readability */
+}
+
+.pagination button:hover {
+  background-color: #004494; /* Darker shade on hover */
+}
+
+/* Dashboard Styles */
+.dashboard {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+  transition: transform 0.3s ease; /* Animation for dashboard hover */
+}
+
+.dashboard:hover {
+  transform: scale(1.02); /* Slightly increase size on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  form {
+      padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  table {
+      font-size: 14px;
+  }
+
+  th, td {
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .pagination {
+      flex-direction: column;
+  }
+
+  .pagination button {
+      margin: 5px 0;
+  }
+}
+
+/* Pagination Styles */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #0056b3; /* Match the nav color */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Animation for pagination hover */
+  font-size: 1em; /* Larger font size for better readability */
+}
+
+.pagination button:hover {
+  background-color: #004494; /* Darker shade on hover */
+}
+
+.pagination button.active {
+  background-color: #004494; /* Darker shade for active page */
+  font-weight: bold; /* Bold font for active page */
+}
+
+@media (max-width: 480px) {
+  form input {
+      padding: 10px;
+  }
+
+  form button {
+      padding: 10px;
+      font-size: 14px;
+  }
+}
